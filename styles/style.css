@@ -2,6 +2,13 @@
   --color-white: #fff;
   --color-acent: #545050;
   --color-page: #1b1919;
+  --fz18px: 1.125rem;
+  --fz30px: 1.875rem;
+  --fz75px: 4.688rem;
+  --lh16px: 1rem;
+  --lh22px: 1.375rem;
+  --lh30px: 1.875rem;
+  --lh70px: 4.375rem;
 }
 
 *,
@@ -17,8 +24,8 @@ html {
 .page {
   margin: auto;
   color: var(--color-white);
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: var(--fz18px);
   background-color: var(--color-page);
   inline-size: 1200px;
   block-size: 100%;
@@ -98,9 +105,9 @@ ol {
 .search-form__fieldset-title {
   font-family: "Fira Sans Condensed";
   font-weight: 400;
-  font-size: 18px;
+  font-size: var(--fz18px);
   font-style: normal;
-  line-height: 22px;
+  line-height: var(--lh22px);
 }
 
 .search-form__fieldset {
@@ -108,13 +115,12 @@ ol {
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
-  min-width: 212px;
 }
 
 .search-form__fieldset-title {
   font-family: "Fira Sans Condensed";
   font-weight: 400;
-  font-size: 18px;
+  font-size: var(--fz18px);
   font-style: normal;
 }
 
@@ -125,15 +131,23 @@ ol {
   border-bottom: 1px solid var(--color-white);
   font-family: "Fira Sans Condensed";
   font-weight: 400;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 22px;
+  font-size: var(--fz18px);
+  line-height: var(--lh22px);
   background-color: transparent;
-  appearance: none; 
+  appearance: none;
+  color: var(--color-white);
+}
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__label:has(:focus-visible) {
+  border: 1px solid var(--color-white);
 }
 
 .search-form__textfield::placeholder {
-  color: rgba(255, 255, 255, 0.70);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .button {
@@ -142,12 +156,19 @@ ol {
   color: var(--color-white);
   font-family: "Fira Sans Condensed";
   font-weight: 700;
-  font-size: 18px;
-  font-style: normal;
-  line-height: normal;
+  font-size: var(--fz18px);
+  line-height: var(--lh22px);
   background-color: transparent;
-  transition: all .3s;
+  transition: all 0.3s;
   cursor: pointer;
+}
+
+.more-button {
+  width: 100%;
+}
+
+.button:active {
+  background-color: var(--color-acent);
 }
 
 .button:hover {
@@ -157,9 +178,9 @@ ol {
 .search-form__fieldset-title {
   font-family: "Fira Sans Condensed";
   font-weight: 400;
-  font-size: 18px;
+  font-size: var(--fz18px);
   font-style: normal;
-  line-height: 22px;
+  line-height: var(--lh22px);
 }
 
 .search-form__label_hover:hover {
@@ -188,8 +209,8 @@ ol {
   color: var(--color-white);
   font-family: Oswald;
   font-weight: 700;
-  font-size: 75px;
-  line-height: 70.5px;
+  font-size: var(--fz75px);
+  line-height: var(--lh70px);
   text-transform: uppercase;
 }
 
@@ -203,7 +224,15 @@ ol {
 }
 
 .content__list-item {
+  transition: all 0.3s;
+}
+
+.content__list-item {
   margin-bottom: 34px;
+}
+
+.content__list-item:active {
+  background-color: var(--color-acent);
 }
 
 .content__list::-webkit-scrollbar {
@@ -218,17 +247,18 @@ ol {
 .content__video-card-title {
   font-family: Oswald;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: var(--fz30px);
+  line-height: var(--lh30px);
   text-transform: uppercase;
+  margin-bottom: 6px;
 }
 
 .content__video-card-description {
   max-width: 200px;
   font-family: "Fira Sans Condensed";
   font-weight: 400;
-  font-size: 18px;
-  line-height: 16.2px;
+  font-size: var(--fz18px);
+  line-height: var(--lh16px);
 }
 
 .content__video-card-thumbnail {
