@@ -157,8 +157,7 @@ ol {
 }
 
 .search-form__textfield:active {
-  border: 1px solid var(--color-white);
-  outline: none;
+  outline: 1px solid var(--color-white);
 }
 
 .search-form__textfield:focus {
@@ -219,12 +218,12 @@ ol {
   margin-bottom: 4px;
 }
 
-.search-form__checkbox:focus:focus {
+.search-form__checkbox:focus {
   outline: none;
 }
 
 .search-form__checkbox:has(:focus-visible) {
-  border: 1px solid var(--color-white);
+  outline: 1px solid var(--color-white);
 }
 
 .search-form__label-text {
@@ -247,9 +246,9 @@ ol {
 }
 
 .search-form__pseudo-checkbox:active {
-  background-color: var(--color-white);
   outline: 1px solid var(--color-page);
   outline-offset: -2px;
+  background-color: var(--color-white);
 }
 
 .title {
@@ -333,6 +332,8 @@ ol {
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
+  object-fit: contain;
+  object-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
 }
