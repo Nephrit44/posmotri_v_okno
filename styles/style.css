@@ -247,15 +247,9 @@ ol {
 }
 
 .search-form__pseudo-checkbox:active {
-  position: relative;
   background-color: var(--color-white);
-}
-
-.search-form__pseudo-checkbox:active::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border: 1px solid black;
+  outline: 1px solid var(--color-page);
+  outline-offset: -2px;
 }
 
 .title {
