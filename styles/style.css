@@ -83,6 +83,7 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   min-width: 711px;
   min-height: 386px;
 }
@@ -272,6 +273,7 @@ ol {
   gap: 30px;
   max-height: 300px;
   overflow-y: scroll;
+  position: relative;
 }
 
 .content__list-item {
