@@ -68,11 +68,15 @@ ol {
   text-decoration: none;
 }
 
+.page {
+  height: 100vh;
+}
+
 .content {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 30px;
-  padding: 133px 30px;
+  height: 100%;
 }
 
 .result {
