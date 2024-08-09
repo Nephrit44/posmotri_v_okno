@@ -183,13 +183,13 @@ ol {
   cursor: pointer;
 }
 
+.more-button {
+  width: 100%;
+}
+
 .button:focus {
   outline: 1px solid var(--color-white);
   outline-offset: 1px;
-}
-
-.more-button {
-  width: 100%;
 }
 
 .button:active {
@@ -228,7 +228,7 @@ ol {
   border: 1px solid var(--color-white);
 }
 
-/*Нажали на псевдо чекбокс, через +спан с указанным классом = присвоить эффекты. Работает только через плюс, 
+/*Нажали на псевдо чекбокс, через + спан с указанным классом = присвоить эффекты. Работает только через плюс, 
 по-другому не получилось*/
 .search-form__checkbox:checked + .search-form__pseudo-checkbox {
   outline: 1px solid var(--color-page);
@@ -237,7 +237,6 @@ ol {
 }
 
 .title {
-  padding-top: 10px;
   padding-bottom: 24px;
   color: var(--color-white);
   font-family: Oswald, sans-serif; 
