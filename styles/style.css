@@ -33,6 +33,7 @@ html {
   background-color: var(--color-page);
   inline-size: 1200px;
   block-size: 100%;
+  padding: 0 30px;
 }
 
 h1,
